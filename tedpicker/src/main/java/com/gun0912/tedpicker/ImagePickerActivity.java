@@ -284,7 +284,7 @@ public class ImagePickerActivity extends AppCompatActivity implements CameraHost
 
     }
 
-    private void updatePicture() {
+    public void updatePicture() {
 
         if (mSelectedImages.size() < mConfig.getSelectionMin()) {
             String text = String.format(getResources().getString(R.string.min_count_msg), mConfig.getSelectionMin());
